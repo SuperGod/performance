@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service MsgService {
+  // Sends a greeting
+  rpc Send (MsgReq) returns (MsgReply) {}
+}
+
+message MsgReq{
+    bytes data = 1;
+}
+
+message MsgReply{
+
+}
